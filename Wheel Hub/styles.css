@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html,body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+}
+
+body {
+    background: url(../images/2024-toyota-mirai-102-65a6e22caa214.jpg) no-repeat center center/cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header, nav, footer {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.intro {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.intro p {
+    padding: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.intro img {
+    width: 50%;
+    height: 600px;
+}
+
+.pey{
+    margin: 25px 80px 0px 80px;
+}
+
+.H2 {
+    font-size: 40px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+nav ul ul li {
+    display: block;
+    margin: 0;
+}
+
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  form .FormRegis .form-group {
+    margin-bottom: 15px;
+  }
+  
+  form .FormRegis .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  form .FormRegis .form-group input,
+  form .FormRegis .form-group select {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  form .FormRegis .form-group input:focus,
+  form .FormRegis .form-group input:valid,
+  form .FormRegis .form-group select:focus,
+  form .FormRegis .form-group select:valid {
+    border-color: #0012b6;
+  }
+  
+  form .FormRegis .form-group input[type="checkbox"] {
+    height: auto;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  form .FormRegis .form-group.form-group-inline {
+    display: flex;
+    align-items: center;
+  }
+  
+  form button {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #001144;
+  }
+  
+  form button:hover {
+    background: #002db4;
+  }  
+
+  footer {
+    margin-top: auto;
+    color: white;
+  }
+
+@media screen and (max-width: 1040px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul ul {
+        position: static;
+    }
+
+    form {
+        max-width: 100%;
+      }
+}
+@media screen and (max-width: 1040px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  #registrationForm {
+      width: 80%;
+      margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+      padding: 0.5em 0;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  #registrationForm {
+      width: 90%;
+      margin: 20px auto;
+      padding: 10px;
+  }
+
+  button[type="submit"] {
+      padding: 8px;
+  }
+
+  .form-group label {
+      font-size: 0.9em;
+  }
+
+  .form-group input, .form-group select {
+      padding: 6px;
+  }
+}
