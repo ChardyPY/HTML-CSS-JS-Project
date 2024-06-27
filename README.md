@@ -19,4 +19,5 @@ Features
 Contribution:
 Created the JS for Image Slider with JQuery 3.7.1
 Created simple design and description for every Interactible Page in the project with the help of CSS
+Made the Website Resizable with the help of @media screen
 
